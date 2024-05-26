@@ -21,7 +21,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
                 placeholder="Search for images"
                 className="p-2 border border-gray-300 rounded-md w-full md:w-1/2"
             />
-            <button type="submit" className="p-2 bg-blue-500 text-white rounded-md ml-2">
+            <button type="submit" className="p-2 bg-sky-900 text-white rounded-md ml-2">
                 Search
             </button>
         </form>

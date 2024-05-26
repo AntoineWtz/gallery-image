@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: aliceblue;
+}
+
 .my-masonry-grid {
     display: flex;
     margin-left: -1rem;
