@@ -41,9 +41,9 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto">
       <h1 className="text-4xl font-bold m-4 text-center">Image Gallery</h1>
-      <p className="text-center text-gray-600">Search for images with Unsplash API</p>
+      <p className="text-center text-gray-600">Search for images with Unsplash</p>
       <SearchBar onSearch={setQuery} />
       <ImageGallery images={images} onImageClick={openModal} />
       <Pagination currentPage={page} totalPages={totalPages} onPageChange={setPage} />
