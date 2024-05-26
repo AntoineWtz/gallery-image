@@ -28,7 +28,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         <div className="flex justify-center m-4">
             <button
                 onClick={() => onPageChange(1)}
-                className={`p-4 mx-1 rounded-md ${currentPage === 1 ? 'bg-gray-300 cursor-not-allowed' : 'bg-sky-900 text-white'}`}
+                className={`p-4 mx-1 rounded-xl ${currentPage === 1 ? 'bg-gray-300 cursor-not-allowed' : 'bg-sky-900 text-white'}`}
                 disabled={currentPage === 1}
             >
                 &laquo;
@@ -37,14 +37,14 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
                 <button
                     key={page}
                     onClick={() => onPageChange(page)}
-                    className={`p-4 mx-1 rounded-md ${page === currentPage ? 'bg-sky-900 text-white' : 'bg-gray-300'}`}
+                    className={`p-4 mx-1 rounded-xl ${page === currentPage ? 'bg-sky-900 text-white' : 'bg-gray-300'}`}
                 >
                     {page}
                 </button>
             ))}
             <button
                 onClick={() => onPageChange(totalPages)}
-                className={`p-4 mx-1 rounded-md ${currentPage === totalPages ? 'bg-gray-300 cursor-not-allowed' : 'bg-sky-900 text-white'}`}
+                className={`p-4 mx-1 rounded-xl ${currentPage === totalPages ? 'bg-gray-300 cursor-not-allowed' : 'bg-sky-900 text-white'}`}
                 disabled={currentPage === totalPages}
             >
                 &raquo;

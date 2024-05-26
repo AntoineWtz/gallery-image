@@ -22,7 +22,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images, onImageClick }) => 
         >
             {images.map((image) => (
                 <div key={image.id} className="relative p-2" onClick={() => onImageClick(image.urls.small)}>
-                    <div className="rounded overflow-hidden shadow-lg relative">
+                    <div className="mt-2 rounded-xl overflow-hidden shadow-lg relative hover:scale-105 duration-300">
                         <img src={image.urls.small} alt={image.alt_description} className="w-full h-auto block" />
                         <div className="absolute bottom-0 bg-black bg-opacity-50 text-white p-2 w-full text-center">
                             <p className="truncate">{image.user.name}</p>
